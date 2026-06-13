@@ -1,27 +1,27 @@
 # ANALIZADOR Y VISUALIZADOR DE LIMITES - MATE1133
 # Universidad Católica de Temuco
 # INDICE DEL CODIGO
-#   LINEA  30  - IMPORTS Y CONFIGURACION GLOBAL
-#   LINEA  45  - BLOQUE 1: FUNCIONES MATEMATICAS
-#   LINEA  48  - parsear_funcion()             -> convierte texto a expresion SymPy
-#   LINEA  60  - parsear_c()                   -> convierte texto de c a valor SymPy
-#   LINEA  70  - sustitucion_directa()         -> PASO 1: evalua f(c) directamente
-#   LINEA  84  - detectar_indeterminacion()    -> PASO 2: clasifica 0/0 o inf/inf
-#   LINEA  96  - factorizar_expresion()        -> PASO 3a: factoriza y cancela factores
-#   LINEA 115  - resolver_trigonometrico()     -> PASO 3b: limites notables sin/cos
-#   LINEA 150  - analizar_limite_infinito()    -> PASO 3c: reglas de grado x->inf
-#   LINEA 175  - calcular_lateral_izquierdo()  -> lim x->c- por aproximacion
-#   LINEA 200  - calcular_lateral_derecho()    -> lim x->c+ por aproximacion
-#   LINEA 225  - verificar_continuidad()       -> verifica las 3 condiciones
-#   LINEA 265  - calcular_limite()             -> ALGORITMO PRINCIPAL (orquesta todo)
-#   LINEA 325  - BLOQUE 2: GRAFICACION
-#   LINEA 328  - graficar_funcion()            -> dibuja la curva con Matplotlib
-#   LINEA 380  - BLOQUE 3: INTERFAZ GRAFICA
-#   LINEA 383  - mostrar_sintaxis()            -> ventana con guia de escritura
-#   LINEA 425  - mostrar_ejemplos()            -> ejemplos resueltos en panel
-#   LINEA 455  - exportar_resultado()          -> guarda resultado en .txt
-#   LINEA 465  - construir_interfaz()          -> construye toda la GUI con pestanas
-#   LINEA 700  - MAIN
+#   LINEA  26  - IMPORTS Y CONFIGURACION GLOBAL
+#   LINEA  42  - BLOQUE 1: FUNCIONES MATEMATICAS
+#   LINEA  49  - parsear_funcion()             -> convierte texto a expresion SymPy
+#   LINEA  64  - parsear_c()                   -> convierte texto de c a valor SymPy
+#   LINEA  75  - sustitucion_directa()         -> PASO 1: evalua f(c) directamente
+#   LINEA  91  - detectar_indeterminacion()    -> PASO 2: clasifica 0/0 o inf/inf
+#   LINEA 107  - factorizar_expresion()        -> PASO 3a: factoriza y cancela factores
+#   LINEA 128  - resolver_trigonometrico()     -> PASO 3b: limites notables sin/cos
+#   LINEA 170  - analizar_limite_infinito()    -> PASO 3c: reglas de grado x->inf
+#   LINEA 198  - calcular_lateral_izquierdo()  -> lim x->c- por aproximacion
+#   LINEA 227  - calcular_lateral_derecho()    -> lim x->c+ por aproximacion
+#   LINEA 258  - verificar_continuidad()       -> verifica las 3 condiciones
+#   LINEA 305  - calcular_limite()             -> ALGORITMO PRINCIPAL (orquesta todo)
+#   LINEA 385  - BLOQUE 2: GRAFICACION
+#   LINEA 385  - graficar_funcion()            -> dibuja la curva con Matplotlib
+#   LINEA 462  - BLOQUE 3: INTERFAZ GRAFICA
+#   LINEA 465  - mostrar_sintaxis()            -> ventana con guia de escritura
+#   LINEA 514  - mostrar_ejemplos()            -> ejemplos resueltos en panel
+#   LINEA 549  - exportar_resultado()          -> guarda resultado en .txt
+#   LINEA 566  - construir_interfaz()          -> construye la GUI con 2 pestanas
+#   LINEA 928  - MAIN
  
 import sympy as sp
 import customtkinter as ctk
