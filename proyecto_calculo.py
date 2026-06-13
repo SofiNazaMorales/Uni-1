@@ -669,7 +669,7 @@ def construir_interfaz():
  
     ctk.CTkLabel(
         tab_inicio,
-        text="Integrantes: Sofia Morales  |  Macarena Melin  |  Angel Obreque",
+        text="Integrantes: Sofia Morales  |  Macarena Melin  |  Matias Manquelaf",
         font=ctk.CTkFont(size=12),
         text_color="#000000"
     ).pack(pady=(8, 18))
